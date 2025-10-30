@@ -1,5 +1,5 @@
-   0.043318732s  INFO prepare_target{force=false package_id=hpet v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/hw/timer/hpet) target="hpet"}: cargo::core::compiler::fingerprint: fingerprint error for hpet v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/hw/timer/hpet)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("hpet", ["lib"], "/apps/learning-qemu-2025-fkcrazy001/rust/hw/timer/hpet/src/lib.rs", Edition2021) }
-   0.043352218s  INFO prepare_target{force=false package_id=hpet v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/hw/timer/hpet) target="hpet"}: cargo::core::compiler::fingerprint:     err: failed to read `/apps/learning-qemu-2025-fkcrazy001/rust/target/debug/.fingerprint/hpet-463f2883416d6852/lib-hpet`
+   0.129441844s  INFO prepare_target{force=false package_id=hpet v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/hw/timer/hpet) target="hpet"}: cargo::core::compiler::fingerprint: fingerprint error for hpet v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/hw/timer/hpet)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("hpet", ["lib"], "/apps/learning-qemu-2025-fkcrazy001/rust/hw/timer/hpet/src/lib.rs", Edition2021) }
+   0.129500840s  INFO prepare_target{force=false package_id=hpet v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/hw/timer/hpet) target="hpet"}: cargo::core::compiler::fingerprint:     err: failed to read `/apps/learning-qemu-2025-fkcrazy001/rust/target/debug/.fingerprint/hpet-463f2883416d6852/lib-hpet`
 
 Caused by:
     No such file or directory (os error 2)
@@ -43,8 +43,8 @@ Stack backtrace:
   25: __libc_start_main_impl
              at ./csu/../csu/libc-start.c:392:3
   26: <unknown>
-   0.147078567s  INFO prepare_target{force=false package_id=qemu_api v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api) target="qemu_api"}: cargo::core::compiler::fingerprint: fingerprint error for qemu_api v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("qemu_api", ["lib"], "/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api/src/lib.rs", Edition2021) }
-   0.147092095s  INFO prepare_target{force=false package_id=qemu_api v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api) target="qemu_api"}: cargo::core::compiler::fingerprint:     err: failed to read `/apps/learning-qemu-2025-fkcrazy001/rust/target/debug/.fingerprint/qemu_api-948de05d447947d1/lib-qemu_api`
+   0.264527339s  INFO prepare_target{force=false package_id=qemu_api v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api) target="qemu_api"}: cargo::core::compiler::fingerprint: fingerprint error for qemu_api v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("qemu_api", ["lib"], "/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api/src/lib.rs", Edition2021) }
+   0.264546795s  INFO prepare_target{force=false package_id=qemu_api v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api) target="qemu_api"}: cargo::core::compiler::fingerprint:     err: failed to read `/apps/learning-qemu-2025-fkcrazy001/rust/target/debug/.fingerprint/qemu_api-948de05d447947d1/lib-qemu_api`
 
 Caused by:
     No such file or directory (os error 2)
@@ -89,8 +89,8 @@ Stack backtrace:
   26: __libc_start_main_impl
              at ./csu/../csu/libc-start.c:392:3
   27: <unknown>
-   0.147660837s  INFO prepare_target{force=false package_id=qemu_api v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api) target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for qemu_api v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api)/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api/build.rs", Edition2021) }
-   0.147668174s  INFO prepare_target{force=false package_id=qemu_api v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api) target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/apps/learning-qemu-2025-fkcrazy001/rust/target/debug/.fingerprint/qemu_api-66207286bde9fbaf/run-build-script-build-script-build`
+   0.265519626s  INFO prepare_target{force=false package_id=qemu_api v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api) target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for qemu_api v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api)/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api/build.rs", Edition2021) }
+   0.265531577s  INFO prepare_target{force=false package_id=qemu_api v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api) target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/apps/learning-qemu-2025-fkcrazy001/rust/target/debug/.fingerprint/qemu_api-66207286bde9fbaf/run-build-script-build-script-build`
 
 Caused by:
     No such file or directory (os error 2)
@@ -137,8 +137,8 @@ Stack backtrace:
   28: __libc_start_main_impl
              at ./csu/../csu/libc-start.c:392:3
   29: <unknown>
-   0.147802772s  INFO prepare_target{force=false package_id=hpet v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/hw/timer/hpet) target="hpet"}: cargo::core::compiler::fingerprint: fingerprint error for hpet v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/hw/timer/hpet)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("hpet", ["lib"], "/apps/learning-qemu-2025-fkcrazy001/rust/hw/timer/hpet/src/lib.rs", Edition2021) }
-   0.147810666s  INFO prepare_target{force=false package_id=hpet v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/hw/timer/hpet) target="hpet"}: cargo::core::compiler::fingerprint:     err: failed to read `/apps/learning-qemu-2025-fkcrazy001/rust/target/debug/.fingerprint/hpet-a5a57f32566c0b04/test-lib-hpet`
+   0.265721943s  INFO prepare_target{force=false package_id=hpet v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/hw/timer/hpet) target="hpet"}: cargo::core::compiler::fingerprint: fingerprint error for hpet v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/hw/timer/hpet)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("hpet", ["lib"], "/apps/learning-qemu-2025-fkcrazy001/rust/hw/timer/hpet/src/lib.rs", Edition2021) }
+   0.265740253s  INFO prepare_target{force=false package_id=hpet v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/hw/timer/hpet) target="hpet"}: cargo::core::compiler::fingerprint:     err: failed to read `/apps/learning-qemu-2025-fkcrazy001/rust/target/debug/.fingerprint/hpet-a5a57f32566c0b04/test-lib-hpet`
 
 Caused by:
     No such file or directory (os error 2)
@@ -182,8 +182,8 @@ Stack backtrace:
   25: __libc_start_main_impl
              at ./csu/../csu/libc-start.c:392:3
   26: <unknown>
-   0.148218305s  INFO prepare_target{force=false package_id=pl011 v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/hw/char/pl011) target="pl011"}: cargo::core::compiler::fingerprint: fingerprint error for pl011 v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/hw/char/pl011)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("pl011", ["lib"], "/apps/learning-qemu-2025-fkcrazy001/rust/hw/char/pl011/src/lib.rs", Edition2021) }
-   0.148227267s  INFO prepare_target{force=false package_id=pl011 v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/hw/char/pl011) target="pl011"}: cargo::core::compiler::fingerprint:     err: failed to read `/apps/learning-qemu-2025-fkcrazy001/rust/target/debug/.fingerprint/pl011-dc41817d0ccc4b13/lib-pl011`
+   0.266318043s  INFO prepare_target{force=false package_id=pl011 v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/hw/char/pl011) target="pl011"}: cargo::core::compiler::fingerprint: fingerprint error for pl011 v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/hw/char/pl011)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("pl011", ["lib"], "/apps/learning-qemu-2025-fkcrazy001/rust/hw/char/pl011/src/lib.rs", Edition2021) }
+   0.266331328s  INFO prepare_target{force=false package_id=pl011 v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/hw/char/pl011) target="pl011"}: cargo::core::compiler::fingerprint:     err: failed to read `/apps/learning-qemu-2025-fkcrazy001/rust/target/debug/.fingerprint/pl011-dc41817d0ccc4b13/lib-pl011`
 
 Caused by:
     No such file or directory (os error 2)
@@ -227,8 +227,8 @@ Stack backtrace:
   25: __libc_start_main_impl
              at ./csu/../csu/libc-start.c:392:3
   26: <unknown>
-   0.148982575s  INFO prepare_target{force=false package_id=pl011 v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/hw/char/pl011) target="pl011"}: cargo::core::compiler::fingerprint: fingerprint error for pl011 v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/hw/char/pl011)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("pl011", ["lib"], "/apps/learning-qemu-2025-fkcrazy001/rust/hw/char/pl011/src/lib.rs", Edition2021) }
-   0.148998708s  INFO prepare_target{force=false package_id=pl011 v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/hw/char/pl011) target="pl011"}: cargo::core::compiler::fingerprint:     err: failed to read `/apps/learning-qemu-2025-fkcrazy001/rust/target/debug/.fingerprint/pl011-c2620540299348c1/test-lib-pl011`
+   0.267124908s  INFO prepare_target{force=false package_id=pl011 v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/hw/char/pl011) target="pl011"}: cargo::core::compiler::fingerprint: fingerprint error for pl011 v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/hw/char/pl011)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("pl011", ["lib"], "/apps/learning-qemu-2025-fkcrazy001/rust/hw/char/pl011/src/lib.rs", Edition2021) }
+   0.267137924s  INFO prepare_target{force=false package_id=pl011 v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/hw/char/pl011) target="pl011"}: cargo::core::compiler::fingerprint:     err: failed to read `/apps/learning-qemu-2025-fkcrazy001/rust/target/debug/.fingerprint/pl011-c2620540299348c1/test-lib-pl011`
 
 Caused by:
     No such file or directory (os error 2)
@@ -272,8 +272,8 @@ Stack backtrace:
   25: __libc_start_main_impl
              at ./csu/../csu/libc-start.c:392:3
   26: <unknown>
-   0.149409881s  INFO prepare_target{force=false package_id=qemu_api v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api) target="qemu_api"}: cargo::core::compiler::fingerprint: fingerprint error for qemu_api v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("qemu_api", ["lib"], "/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api/src/lib.rs", Edition2021) }
-   0.149421925s  INFO prepare_target{force=false package_id=qemu_api v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api) target="qemu_api"}: cargo::core::compiler::fingerprint:     err: failed to read `/apps/learning-qemu-2025-fkcrazy001/rust/target/debug/.fingerprint/qemu_api-6ab0c946c42c952e/test-lib-qemu_api`
+   0.267561053s  INFO prepare_target{force=false package_id=qemu_api v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api) target="qemu_api"}: cargo::core::compiler::fingerprint: fingerprint error for qemu_api v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("qemu_api", ["lib"], "/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api/src/lib.rs", Edition2021) }
+   0.267571836s  INFO prepare_target{force=false package_id=qemu_api v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api) target="qemu_api"}: cargo::core::compiler::fingerprint:     err: failed to read `/apps/learning-qemu-2025-fkcrazy001/rust/target/debug/.fingerprint/qemu_api-6ab0c946c42c952e/test-lib-qemu_api`
 
 Caused by:
     No such file or directory (os error 2)
@@ -317,8 +317,8 @@ Stack backtrace:
   25: __libc_start_main_impl
              at ./csu/../csu/libc-start.c:392:3
   26: <unknown>
-   0.149779207s  INFO prepare_target{force=false package_id=qemu_api v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api) target="tests"}: cargo::core::compiler::fingerprint: fingerprint error for qemu_api v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api)/Check { test: true }/TargetInner { kind: "test", name: "tests", benched: false, ..: with_path("/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api/tests/tests.rs", Edition2021) }
-   0.149791360s  INFO prepare_target{force=false package_id=qemu_api v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api) target="tests"}: cargo::core::compiler::fingerprint:     err: failed to read `/apps/learning-qemu-2025-fkcrazy001/rust/target/debug/.fingerprint/qemu_api-e51b296c31703423/test-integration-test-tests`
+   0.267781762s  INFO prepare_target{force=false package_id=qemu_api v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api) target="tests"}: cargo::core::compiler::fingerprint: fingerprint error for qemu_api v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api)/Check { test: true }/TargetInner { kind: "test", name: "tests", benched: false, ..: with_path("/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api/tests/tests.rs", Edition2021) }
+   0.267789524s  INFO prepare_target{force=false package_id=qemu_api v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api) target="tests"}: cargo::core::compiler::fingerprint:     err: failed to read `/apps/learning-qemu-2025-fkcrazy001/rust/target/debug/.fingerprint/qemu_api-e51b296c31703423/test-integration-test-tests`
 
 Caused by:
     No such file or directory (os error 2)
@@ -362,8 +362,8 @@ Stack backtrace:
   25: __libc_start_main_impl
              at ./csu/../csu/libc-start.c:392:3
   26: <unknown>
-   0.150065491s  INFO prepare_target{force=false package_id=qemu_api v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api) target="vmstate_tests"}: cargo::core::compiler::fingerprint: fingerprint error for qemu_api v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api)/Check { test: true }/TargetInner { kind: "test", name: "vmstate_tests", benched: false, ..: with_path("/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api/tests/vmstate_tests.rs", Edition2021) }
-   0.150074148s  INFO prepare_target{force=false package_id=qemu_api v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api) target="vmstate_tests"}: cargo::core::compiler::fingerprint:     err: failed to read `/apps/learning-qemu-2025-fkcrazy001/rust/target/debug/.fingerprint/qemu_api-eaf50aa592e563ad/test-integration-test-vmstate_tests`
+   0.268002900s  INFO prepare_target{force=false package_id=qemu_api v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api) target="vmstate_tests"}: cargo::core::compiler::fingerprint: fingerprint error for qemu_api v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api)/Check { test: true }/TargetInner { kind: "test", name: "vmstate_tests", benched: false, ..: with_path("/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api/tests/vmstate_tests.rs", Edition2021) }
+   0.268010479s  INFO prepare_target{force=false package_id=qemu_api v0.1.0 (/apps/learning-qemu-2025-fkcrazy001/rust/qemu-api) target="vmstate_tests"}: cargo::core::compiler::fingerprint:     err: failed to read `/apps/learning-qemu-2025-fkcrazy001/rust/target/debug/.fingerprint/qemu_api-eaf50aa592e563ad/test-integration-test-vmstate_tests`
 
 Caused by:
     No such file or directory (os error 2)
