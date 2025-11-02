@@ -36,7 +36,7 @@
 #include "hw/char/pl011.h"
 
 /* TODO: you need include some header files */
-
+#include "hw/ssi/ssi.h"
 static const MemMapEntry g233_memmap[] = {
     [G233_DEV_MROM] =     {     0x1000,     0x2000 },
     [G233_DEV_CLINT] =    {  0x2000000,    0x10000 },
@@ -45,6 +45,7 @@ static const MemMapEntry g233_memmap[] = {
     [G233_DEV_GPIO0] =    { 0x10012000,     0x1000 },
     [G233_DEV_PWM0] =     { 0x10015000,     0x1000 },
     [G233_DEV_DRAM] =     { 0x80000000, 0x40000000 },
+    [G233_DEV_SPI] = {0x10018000, 0x1000},
 };
 
 static void g233_soc_init(Object *obj)
@@ -131,6 +132,33 @@ static void g233_soc_realize(DeviceState *dev, Error **errp)
     create_unimplemented_device("riscv.g233.pwm0",
         memmap[G233_DEV_PWM0].base, memmap[G233_DEV_PWM0].size);
 
+    // spi
+    s->spi = qdev_new("g233_spi");
+
+    if (!sysbus_realize(SYS_BUS_DEVICE(s->spi), errp)) {
+        return;
+    }
+    //map region
+    sysbus_mmio_map(SYS_BUS_DEVICE(s->spi), 0, memmap[G233_DEV_SPI].base);
+
+    SSIBus *ssibus = (SSIBus *)qdev_get_child_bus(DEVICE(s->spi), "g233spi.ssi");
+
+    DeviceState *flash = qdev_new("w25x16");
+    DeviceState *flash1 = qdev_new("w25x32");
+    qdev_prop_set_uint8(flash, "cs", 0);
+    qdev_prop_set_uint8(flash1, "cs", 1);
+
+    ssi_realize_and_unref(flash, ssibus, &error_fatal);
+    ssi_realize_and_unref(flash1, ssibus, &error_fatal);
+
+    qemu_irq flash_cs_in = qdev_get_gpio_in_named(flash, SSI_GPIO_CS, 0);
+    qemu_irq flash1_cs_in = qdev_get_gpio_in_named(flash1, SSI_GPIO_CS, 0);
+
+    qdev_connect_gpio_out(DEVICE(s->spi), 0, flash_cs_in);
+    qdev_connect_gpio_out(DEVICE(s->spi), 1, flash1_cs_in);
+
+    /* Wire SPI IRQ (unnamed-gpio-out[2]) to PLIC source */
+    qdev_connect_gpio_out(DEVICE(s->spi), 2, qdev_get_gpio_in(DEVICE(s->plic), G233_SPI0_IRQ));
 }
 
 static void g233_soc_class_init(ObjectClass *oc, const void *data)

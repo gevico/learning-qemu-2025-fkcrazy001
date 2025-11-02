@@ -37,6 +37,7 @@ riscv_system_ss.add(files(
   'time_helper.c',
   'riscv-qmp-cmds.c',
   'g233_helper.c',
+  'g233_spi.c',
 ))
 
 subdir('tcg')

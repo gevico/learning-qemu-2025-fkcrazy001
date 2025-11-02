@@ -38,6 +38,7 @@ typedef struct G233SoCState {
     DeviceState *plic;
     DeviceState *uart0;
     DeviceState *pwm0;
+    DeviceState *spi;
     SIFIVEGPIOState gpio;
     MemoryRegion mask_rom;
 } G233SoCState;
@@ -59,6 +60,7 @@ enum {
     G233_DEV_MROM,
     G233_DEV_CLINT,
     G233_DEV_PLIC,
+    G233_DEV_SPI,
     G233_DEV_GPIO0,
     G233_DEV_UART0, /* PL011 */
     G233_DEV_PWM0,
@@ -68,6 +70,7 @@ enum {
 enum {
     G233_UART0_IRQ  = 1,
     G233_PWM0_IRQ   = 2,
+    G233_SPI0_IRQ = 3,
     G233_GPIO0_IRQ0 = 8
 };
 
